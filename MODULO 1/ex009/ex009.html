@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="sponge.png" type="image/x-icon">
+    <title>Videos com HTML</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente.</h1>
+    <p>Este video esta hospedado no meu proprio servidor.</p>
+
+    <video width="500" poster="video/thumb.jpg" controls>
+        <source src="video/pizza.mp4" type="video/mp4">
+        <source src="video/pizza.m4v" type="video/mp4">
+        <source src="video/pizza.webm" type="video/webm">
+        <source src="video/pizza.ogv" type="video/ogg">
+        <p>Seu navegador nao suporta este tipo de arquivo. <a href="video/pizza.mp4">Clique aqui para baixar o video em MP4</a>.</p>
+    </video>
+
+    <h1>Inserindo Videos do Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/ipnWArxeRrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a
+{
+    color: red;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: darkred;
+}
+
+a:hover
+{
+    color: black;
+    text-decoration: underline;
+}
+
+a:active
+{
+    color: darkorange;
+}
+
+.especial
+{
+    background-color: rgba(300, 24, 24, 0.5);
+}
+
+.especial:hover
+{
+    color: rgb(83, 77, 77);
+}
+
+.especial::before
+{
+    content: '→';
+}
+
+.especial::after
+{
+    content: '←';
+}

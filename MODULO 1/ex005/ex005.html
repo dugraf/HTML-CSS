@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="rabbit.ico" type="image/x-icon">
+    <title>Formatacoes</title>
+    <style>
+        mark
+        {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatacoes</h1>
+    <hr>
+    <h2>Negrito</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b>usando a tag &lt;b&gt; e &lt;/b&gt; </p>
+    <p>Ja, nesta frase tenho um <strong>termo em destaque forte</strong> usando &lt;strong&gt; e &lt;/strong&gt;</p>
+<hr>
+    <h2>Italico</h2>
+    <p>Nesta frase, temos um <i>termo em italico</i> usando a tag &lt;i&gt; e &lt;/i&gt;</p>
+    <p>Nesta frase, temos um <em>termo em italico</em> usando a tag &lt;em&gt; e &lt;/em&gt;</p>
+<hr>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar tambem um <mark style="background-color: rgb(0, 255, 255);"> um texto marcado</mark> usando a tag &lt;mark&gt; e &lt;/mark&gt;</p>
+    <p>Podemos criar <mark>outro texto marcado</mark> no final. </p>
+<hr>
+    <h2>Texto grande e pequeno</h2>
+    <p>Agora vamos ver um <big>texto grande</big> usando &lt;big&gt; e &lt;/big&gt; (esse termo eh obsoleto) e um <small>texto pequeno</small> usando &lt;small&gt; e &lt;/small&gt;nesse paragrafo.</p>
+<hr>
+    <h2>Texto Hachurado/deletado</h2>
+    <p>Podemos marcar um <del>texto como excluido</del> para indicar que ele nao deve ser considerado, usando &lt;del&gt; e &lt;/del&gt;.</p>
+<hr>
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar enfase, usando &lt;ins&gt; e &lt;/ins&gt;.</p>
+    <p>Existe tambem o <u>sublinhado</u>, nao semantico, usando &lt;u&gt; e &lt;u&gt;</p>
+<hr>
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir textos do tipo: x<sup>2</sup> + 3, usa-se &lt;sup&gt; e &lt;/sup&gt;</p>
+    <hr>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir textos do tipo H<sub>2</sub>O, usa-se &lt;sub&gt; e &lt;/sub&gt;</p>
+<hr>
+    <h1>Outras Formatacoes</h1>
+    <h2>Codigo-Fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> eh escrito em linguagem JavaScript. <br>Essa formatacao eh definida por: &lt;code&gt; e &lt;/code&gt;</p>
+
+    <pre>
+        <code>
+            num = int(input('Digite um numero'))
+            if num %2 == 0:
+                print(f'0 numero {num} eh par')
+            else:
+                print(f'O numero {num} eh impar')
+            print('Fim do programa')
+        </code>
+    </pre>
+    <p>Usou-se agora &lt;pre&gt; e &lt;/pre&gt;</p>
+<hr>
+    <h2>Citacoes</h2>
+    <p>Como diria ele: <q>Esses tempo ai eu tava no Insta, esse tempo acho que anteontem.</q>Usando &lt;q&gt; e &lt;/q&gt;</p>
+<hr>
+    <h2>Citacoes Completas</h2>
+    <p>De acordo com o livro: Fundamentals of C Programming Language by Gaurav Sharma: usando &lt;blockquote&gt; e &lt;/blockquote&gt; </p>
+    <blockquote cite="https://www.google.com.br/books/edition/FUNDAMENTALS_OF_C_PROGRAMMING_LANGUAGE/5K-eBgAAQBAJ?hl=pt-BR&gbpv=1&dq=C+lang&pg=PA122&printsec=frontcover">
+        Append mode is used to open a file in read and write after end of file content. This mode is denoted by "a+" if file already exists. If the file does not exist, the compiler will create a new file. Generally, this mode is used in pre-existing file on disk to read and add some information.
+    </blockquote>
+<hr>
+    <h2>Abreviacoes</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. E usando a formatacao &lt;abbr&gt; e &lt;/abbr&gt;</p>
+<hr>
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou utilizando &lt;bdo&gt; e &lt;/bdo&gt;.</bdo></p>
+</body>
+</html>

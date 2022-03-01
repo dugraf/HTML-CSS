@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+div.d
+{
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 1.5em;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div.d:hover
+{
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+div.mouse > p
+{
+    display: none;
+}
+
+div.mouse:hover > p
+{
+    display: block;
+    background-color: rgb(218, 238, 130);
+    font-size: 2em;
+}
+
+div.mouse:hover
+{
+    color: red;
+}
+
+div.rato > img
+{
+    display: none;
+}
+
+div.rato:hover > img
+{
+    display: block;
+    
+}

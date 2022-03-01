@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkslategrey;
+
+    margin: 15px 40px;
+}
+
+header
+{
+    text-align: center;
+    background-color: white;
+    
+    padding-top: 0.5em;
+    padding-right: auto;
+    padding-bottom: 4em;
+    padding-left: auto;
+
+    height: 120px;
+
+    margin: auto;
+
+    border-radius: 10px;
+}
+
+nav
+{   
+    background-color: cadetblue;
+    width: 500px;
+    margin: 20px auto 10px auto;
+    padding: 10px;
+
+    border-style: dotted;
+
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.199);
+}
+
+nav > a
+{
+    margin-left: 50px;
+    text-decoration: none;
+    color: darkslategrey
+}
+
+nav > a:hover
+{
+    text-decoration: underline;
+}
+
+main
+{
+    background-color: rgb(219, 219, 219);
+    margin: 10px 40px;
+    border-radius: 60px 0px;
+
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.418);
+}
+
+article
+{
+    padding: 1px 30px;
+}
+
+article > aside
+{
+    background-color: gainsboro;
+    width: 250px;
+}
+
+footer
+{
+    background-color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 10px;
+}
+
+footer > p
+{
+    margin: 0px;
+}
+
+h1
+{
+    width: 400px;
+    margin: auto;
+    border: 20px solid transparent;
+    padding: 10px;
+
+    /*border-image-source: url('borda.png');
+    border-image-slice: 360;*/
+
+    border-image: url('borda.png') 360;
+}
+
+h2
+{
+    text-align: center;
+}
+
+h3
+{
+    color: rgb(34, 34, 34);
+    font-style: italic;
+}
+
+p
+{
+    text-align: justify;
+    font-size: 15px;
+}
