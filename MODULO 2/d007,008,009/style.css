@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@font-face
+{
+    font-family: 'star';
+    src: url('/MODULO 2/d007\,008\,009/fonts/stjedise/STJEDISE.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root
+{
+    --cor0: 
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-image: linear-gradient(to top, gray, black);
+}
+
+header
+{
+
+}
+
+header h1
+{
+    text-align: center;
+
+    color: rgb(182, 182, 182);
+
+    font-family: 'star';
+    font-size: 3em;
+}
+
+nav
+{
+    text-align: center;
+}
+
+main
+{
+
+}
+
+main h2
+{
+    text-align: center;
+
+}
+
+footer
+{
+
+}
