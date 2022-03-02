@@ -9,8 +9,7 @@
 
 :root
 {
-    --cor0: 
-
+    --corlink:  #654321;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
 
@@ -27,7 +26,7 @@ body
 
 header
 {
-
+    margin: 10px
 }
 
 header h1
@@ -38,11 +37,21 @@ header h1
 
     font-family: 'star';
     font-size: 3em;
+    padding: 0px;
+    margin: 0px;
 }
 
 nav
 {
     text-align: center;
+
+    font-size: 1.5em;
+    
+    margin: 10px;
+    padding: 5px;
+
+    text-decoration: none;
+    
 }
 
 main
@@ -53,10 +62,58 @@ main
 main h2
 {
     text-align: center;
+    color: gray;
 
+    font-family: 'star';
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+main h3
+{
+    text-align: center;
+    color: white;
+
+    font-family: 'star';
+    font-weight: lighter;
+}
+
+main h3 > a
+{
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+}
+
+main h3 > a:hover
+{
+    text-decoration: underline;
+
+    color: #654321;
+}
+
+main picture > img
+{
+    margin: auto;
+    display: block;
 }
 
 footer
 {
+    font-family: var(--fonte-padrao);
 
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+    color: var(--corlink);
 }
