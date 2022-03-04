@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+@font-face
+{
+    font-family: 'star';
+    src: url('/MODULO 3/d007\,008\,009/fonts/stjedise/STJEDISE.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root
+{
+    --corlink:  #654321;
+    --fonte-star: 'star';
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body
+{
+    height: 98vh;
+    background-image: url('../img/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    min-width: 600px;
+}
+
+header
+{
+    margin: 0px 10px 10px 10px;
+}
+
+header h1
+{
+    text-align: center;
+    text-shadow: 8px 6px 16px black;
+
+    background-image: linear-gradient(to top, transparent, black);
+
+    color: white;
+
+    font-family: 'star';
+    font-size: 3em;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav
+{
+    text-align: center;
+
+    font-size: 1.5em;
+    font-family: 'Fredoka';
+
+    margin: auto auto 10px auto;
+    padding: 5px;
+
+    text-decoration: none;
+}
+
+nav > a
+{
+    text-decoration: none;
+    text-shadow: 8px 6px 16px black;
+
+    color: white;
+
+    padding: 5px 60px 5px 90px;
+    margin: auto;
+}
+
+nav a:hover
+{
+    text-shadow: 7px 6px 4px black;
+
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 10px;
+    transition-duration: .9s;
+    
+}
+
+main
+{
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 20px;
+
+    width: auto;
+    margin: 20px auto;
+    padding: 20px;
+
+    min-width: 600px;
+    max-width: 1400px;
+}
+
+main h2
+{
+    text-align: center;
+    color: black;
+
+    font-family: 'star';
+    font-weight: lighter;
+    font-size: 2em;
+
+    margin: auto auto 10px auto;
+}
+
+main h3
+{
+    text-align: center;
+    color: black;
+
+    font-family: 'star';
+    font-weight: lighter;
+}
+
+main h3 > a
+{
+    text-decoration: none;
+    color: var(--corlink);
+
+    font-size: 1.2em;
+}
+
+main h3 > a:hover
+{
+    text-decoration: underline;
+
+    color: var(--corlink);
+}
+
+main picture > img
+{
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+footer
+{
+    font-family: var(--fonte-padrao);
+
+    background-color: rgba(255, 255, 255, 0.37);
+
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    padding: 5px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: var(--corlink);
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+    color: var(--corlink);
+}
