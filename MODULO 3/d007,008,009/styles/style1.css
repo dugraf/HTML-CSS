@@ -28,13 +28,24 @@ main
     background-color: rgba(255, 255, 255, 0.459);
     border-radius: 20px;
 
+    margin: 20px auto;
+    padding: 20px;
+
 }
 
 footer a
 {
     text-decoration: none;
     color: red;
+    border: 3px dashed red;
 
     font-size: 2em;
-    border: 3px dashed red;
+}
+
+footer a:hover
+{
+    color: blue;
+    border: 3px dashed blue;
+
+    transition: .9s; 
 }
