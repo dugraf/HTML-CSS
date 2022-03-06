@@ -74,4 +74,13 @@ div#q2
 div#q3
 {
     background-image: url("../img/pattern001.png");
+    transition: all .4s ease-in-out;
+}
+
+div#q3:hover
+{
+    background-image: url('../img/pattern002.png');
+
+    transition: all .4s ease-in-out;
+    border-radius: 50px;
 }
