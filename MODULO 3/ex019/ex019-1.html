@@ -1,0 +1,220 @@
+<!--Aprendendo a trabalhar com tabelas grandes-->
+<!--Caption e Escopo de títulos em tabelas-->
+<!-- Efeito Zebrado na tabela com HTML e CSS-->
+<!--Cabeçalho fixo em tabelas grandes-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table
+        {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption
+        {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th
+        {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th#pop
+        {
+            width: 50px;
+        }
+
+        td.numero
+        {
+            text-align: right;
+        }
+
+        thead > tr > th
+        {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        thead, tfoot
+        {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n - 1) /*odd*/
+        {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(2n) /*even*/
+        {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    
+    <table>
+
+        <caption>Populacao das Unidades Federativas</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th id="pop" scope="col">Populacao</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="numero">46 649 132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 411 923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 463 349</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 985 284</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="numero">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 466 630</td>
+            </tr>
+            <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.018.354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.144.597</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.018.650</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.506.853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.484.466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.337.357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.273.227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.015.268</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.778.986</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.298.696</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.777.225</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.572.866</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">881.935</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">845.731</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">605.761</td>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>123.573.802</strong></td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi ducimus repudiandae cum nulla. In accusantium et, a laboriosam temporibus eum nesciunt nam ipsam quis, harum maiores laudantium nulla illum eos atque ut obcaecati incidunt? Sapiente nesciunt nostrum iure dolor. Aperiam unde harum laudantium nostrum quam? Recusandae cumque praesentium animi temporibus culpa incidunt necessitatibus odio tenetur, pariatur, saepe blanditiis fugiat possimus, quibusdam vel doloribus quasi aperiam autem ut? Laudantium ullam nostrum amet dolor, eligendi non commodi labore quidem ea eaque quas exercitationem porro, deleniti ut saepe delectus alias veritatis perspiciatis! Doloribus, itaque saepe omnis excepturi neque labore quis ad perspiciatis quia vitae cumque ullam natus sit reiciendis atque molestias repellat mollitia a vero iusto sunt. Quisquam assumenda reiciendis quibusdam eaque dignissimos perferendis laboriosam vel accusantium ad voluptate at, repudiandae eius cumque illo odit corporis cum est, commodi numquam consequatur! Sequi quidem nulla laudantium est voluptatem maiores officiis perferendis accusamus deleniti qui culpa neque dolores molestiae quaerat necessitatibus aperiam porro vel, sunt nostrum labore ipsam hic quibusdam laboriosam. Laborum nihil eius iure fugiat recusandae cupiditate vero itaque distinctio. Dignissimos quasi pariatur numquam saepe mollitia neque cum aliquid, dolor possimus ratione, recusandae enim ipsum voluptatibus unde. Nihil mollitia nemo natus soluta nostrum temporibus consequatur! Cupiditate quae consectetur delectus nisi culpa praesentium itaque blanditiis enim maxime beatae. Consequuntur, mollitia! Ipsum sapiente repellendus magni autem expedita aliquid velit dicta harum, illum quo perspiciatis eaque earum aut adipisci, provident aperiam fugit reprehenderit! Maxime velit a nesciunt est facilis veniam consequuntur consectetur quos dolorum soluta eaque fuga expedita esse magnam laborum, deserunt eveniet delectus sunt magni impedit facere perspiciatis? Ratione tempora praesentium quod, aspernatur ex eum odit dolore laudantium quidem voluptate, magnam officiis tempore eveniet adipisci reiciendis, consequatur laborum accusamus nostrum ipsam! Dolore delectus, beatae perspiciatis dolor, eaque quod aut iure voluptatem iste nobis illum atque, voluptatum possimus odit est quam placeat ipsa non quo! Reiciendis ipsam aspernatur facilis alias odio perferendis dicta libero dolor nemo, laboriosam sit excepturi ad eius unde, voluptatem inventore. Natus adipisci ducimus dolorem cumque inventore, sunt maiores! Consequuntur temporibus iure unde omnis quia ipsum, explicabo cupiditate, repudiandae perspiciatis harum, magni possimus ullam hic consequatur tempora similique sunt mollitia. Placeat ad laudantium ipsa harum! Eveniet quis ipsam aut nulla cumque atque, earum maxime facilis, eius accusantium doloremque velit quidem aliquid ab, reiciendis ullam cupiditate quos autem error! In provident nihil cum odio. Quos numquam nobis et illo quas delectus odio unde ex quaerat cupiditate necessitatibus dolore eaque, magni, tenetur impedit ab blanditiis saepe corrupti, doloremque aliquid. Iure, consectetur beatae. Autem quod perferendis voluptate accusamus eius inventore veritatis ullam nesciunt nulla ipsam necessitatibus nihil quaerat dolores et totam enim ratione fugit rerum, eaque exercitationem aperiam reiciendis id molestiae numquam? Tempore consectetur error, esse adipisci deserunt doloribus! Ipsam quidem optio voluptates qui, beatae rerum error perspiciatis dolore nesciunt pariatur facilis labore voluptatum harum quaerat porro! Animi, repudiandae illo! Deleniti sed ex assumenda harum? Corrupti nesciunt animi quas at ex. Perferendis quae voluptas, debitis cupiditate esse labore quasi nam molestias excepturi beatae a nulla delectus inventore aliquid ex dolorem totam error ullam magnam ab voluptatum. Deserunt similique voluptas ipsam dolore odio vero provident repellat nemo amet praesentium omnis deleniti nesciunt magni, voluptatum neque consectetur excepturi quia maxime molestias porro voluptatem obcaecati sapiente temporibus alias. Eos, cum assumenda sit quos voluptatem voluptatibus amet eius harum reiciendis maxime aliquid velit odit, excepturi blanditiis quas ratione, molestiae vitae. Fugit sapiente officia animi recusandae dolore. Minus est magnam illum optio quod minima! Totam perspiciatis laboriosam impedit eligendi adipisci iure enim optio quo laudantium, quisquam magnam? Doloribus reprehenderit corrupti officiis eos nobis doloremque, labore consectetur numquam blanditiis ipsa expedita magnam.</p>
+
+</body>
+</html>
