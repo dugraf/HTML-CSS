@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root
+{
+    --font0: 'Cheque-Regular';
+    --font1: 'Cheque-Black';
+
+    --cor0: #2E1540;
+    --cor1: #DCAC02;
+    --cor2: #222327;
+}
+
+body
+{
+    background-color: var(--cor2);
+}
+
+header h1
+{
+    text-align: center;
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 3em;
+
+    color: var(--cor1);
+    padding: 50px 0px;
+    margin: 0px;
+}
+
+header
+{
+    background-image: url('../img/painel-filo.png');
+    background-color: var(--cor0);
+    background-repeat: no-repeat;
+    margin: 0px;
+    text-align: center;
+}
+
+nav
+{
+    text-align: center;
+    background-color: var(--cor0);
+}
+
+nav li
+{
+    display: inline-block;
+    color: white;
+    font-size: 2em;
+}
+
+nav p.efeito
+{
+    display: none;
+}
+
+nav p.efeito:hover
+{
+    display: block;
+}
+
+section
+{
+    line-height: 50px;
+    font-size: 2em;
+    font-family: var(--font1);
+    color:  white;
+
+    padding: 3vh 0px 3vh 0px;
+}
+
+section p
+{
+    padding: 70px 50px;
+    margin: 0px 30px;
+}
+
+section.img > p
+{
+    background-color: rgba(0, 0, 0, 0.466);
+    display: inline-block;
+    padding: 0px 0px;
+    text-shadow: 5px 6px 10px black;
+    margin: 0px 90px;
+    
+}
+
+section.normal
+{
+    color: white;
+    background-color: var(--cor2);
+}
+
+section.img
+{
+    padding: 90px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 2px 2px 20px 0px black;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+section#img1
+{
+    background-image: url('../img/arvore.png');
+    background-position: right bottom;
+}
+
+section#img2
+{
+    background-image: url('../img/apple.jpg');
+    background-position: right top;
+}
+
+section#img3
+{
+    background-image: url('../img/borboleta.jpg');
+    background-position: right center;
+}
