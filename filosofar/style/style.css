@@ -8,6 +8,7 @@
 {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root
@@ -60,6 +61,8 @@ nav li
     display: inline-block;
     color: white;
     font-size: 2em;
+
+    padding: 0px 20px;
 }
 
 nav p.efeito
@@ -158,7 +161,7 @@ section.info h2
 section > p.txt
 {
     padding: 20px;
-    margin: 0px 55px;
+    margin: 0px 90px;
 }
 
 section.info h3
@@ -172,17 +175,105 @@ section.info h3
     padding: 20px 0px;
 }
 
-section.info div.box
+.pai
 {
-    height: 400px;
-    width: 500px;
-    margin: 0px auto;
-
-    background-color: red;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    align-content: center;
+}
+
+.filho
+{
+    width: 216.5px;
+    height: 288.5px;
+    box-shadow: inset 0px 0px 20px 9px #222327;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+#socrates
+{
+    background-image: url('../img/socrates1.jpg');
+    background-size: contain;
+    transition: .4s;
+}
+
+#socrates:hover
+{
+    background-image: url('../img/socrates-b.jpg');
+    background-size: contain;
+    transition: .4s;
+}
+
+#socrates p
+{
+    font-size: 1px;
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+}
+
+#marcus
+{
+    background-image: url('../img/marcus.jpg');
+    background-size: contain;
+    transition: .4s;
+}
+
+#marcus:hover
+{
+    background-image: url('../img/marcus-b.jpg');
+    background-size: contain;
+    transition: .4s;
+}
+
+#platao
+{
+    background-image: url('../img/platao.jpg');
+    background-size: contain;
+    transition: .4s;
+}
+
+#platao:hover
+{
+    background-image: url('../img/platao-b.jpg');
+    background-size: contain;
+    transition: .4s;
+}
+
+footer
+{
+    background-color: var(--cor0);
+    font-family: var(--font4);
+    color: white;
+
+    padding: 20px 0px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover
+{
+    color: var(--cor1);
+}
+
+div#pae
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer div
+{
+    text-align: center;
+    padding: 0px 40px;
 }
