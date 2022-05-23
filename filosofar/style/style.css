@@ -9,6 +9,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-shadow: 0.7px 0.7px 0.7px black;
+
 }
 
 :root
@@ -24,6 +26,11 @@
     --cor2: #222327;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     background-color: var(--cor2);
@@ -37,7 +44,7 @@ header h1
     font-size: 3.8em;
 
     color: var(--cor1);
-    padding: 50px 0px;
+    padding: 50px 0px 30px 0px;
     margin: 0px;
 }
 
@@ -65,6 +72,11 @@ nav li
     padding: 0px 20px;
 }
 
+nav li a:hover
+{
+    color: #222327;
+}
+
 nav p.efeito
 {
     display: none;
@@ -73,6 +85,35 @@ nav p.efeito
 nav p.efeito:hover
 {
     display: block;
+}
+
+nav div#assine
+{
+    background-color: var(--cor1);
+    width: 25%;
+    margin: 15px auto auto auto;
+    padding: 5px 5px;
+    font-family: var(--font2);
+    font-size: 2em;
+    border-radius: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+nav div#assine:hover
+{
+    width: 100%;
+}
+
+nav div#assine a
+{
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+nav div#assine a:hover
+{
+    color: var(--cor2);
 }
 
 section
@@ -111,6 +152,8 @@ section.normal
 {
     color: white;
     background-color: var(--cor2);
+    text-shadow: 4px 2px 7px black;
+    
 }
 
 section.img
@@ -156,6 +199,7 @@ section.info h2
     text-align: center;
     margin: 0px;
     color: var(--cor1);
+    padding: 10px 0px;
 }
 
 section > p.txt
@@ -172,77 +216,153 @@ section.info h3
     text-align: center;
     margin: 0px;
     color: var(--cor1);
-    padding: 20px 0px;
+    padding: 40px 0px;
 }
 
-.pai
+.container_desenhos
 {
-    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 }
 
-.filho
+.box_desenhos
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #DCAC02;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box_desenhos h4
+{
+    color: #DCAC02;
+    font-size: 0.9em;
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    z-index: 1;
+    padding-top: 15px;
+    left: -150%;
+    transition: .5s ease-in-out;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    text-align: center;
+    line-height: normal;
+}
+
+.box_desenhos:hover h4
+{
+    transform: translateX(150%);
+}
+
+.box_desenhos img
+{
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 15%;
+
+    font-size: 10rem;
+    transition: .5s ease-in-out;
+}
+
+.box_desenhos:hover img
+{
+    transform: translate(50px, 50px);
+    box-shadow: 2px 2px 4px black;
+    filter: blur(8px);
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container a
+{
+    text-decoration: none;
+}
+
+.box
 {
     width: 216.5px;
     height: 288.5px;
-    box-shadow: inset 0px 0px 20px 9px #222327;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 100%;
+    border: 1px solid #DCAC02;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    padding: 15px 20px;
+    position: relative;
+    overflow: hidden;
+    line-height: normal;
 }
 
-#socrates
+.box h4
 {
-    background-image: url('../img/socrates1.jpg');
-    background-size: contain;
-    transition: .4s;
+    color: #DCAC02;
+    font-size: 1em;
 }
 
-#socrates:hover
+.box img
 {
-    background-image: url('../img/socrates-b.jpg');
-    background-size: contain;
-    transition: .4s;
+    width: 216.5px;
+    height: 288.5px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+    transition: .5s ease-in-out;
 }
 
-#socrates p
+.box:hover img
 {
-    font-size: 1px;
-    margin: 0px;
-    padding: 0px;
+    transform: translate(-90px, -90px);
+    box-shadow: 2px 2px 4px black;
+    filter: blur(8px);
+}
+
+.box .content
+{
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    z-index: 1;
+    top: 0px;
+    left: -150%;
+    transition: .5s ease-in-out;
+    padding: 30px 2px;
+    text-shadow: 0.7px 0.7px 0.7px black;
     text-align: justify;
 }
 
-#marcus
+.box:hover .content
 {
-    background-image: url('../img/marcus.jpg');
-    background-size: contain;
-    transition: .4s;
+    transform: translateX(150%);
 }
 
-#marcus:hover
+.box .content p
 {
-    background-image: url('../img/marcus-b.jpg');
-    background-size: contain;
-    transition: .4s;
+    color: #DCAC02;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    padding: 2px;
+    margin: 0px;
 }
 
-#platao
+p.mark
 {
-    background-image: url('../img/platao.jpg');
-    background-size: contain;
-    transition: .4s;
-}
-
-#platao:hover
-{
-    background-image: url('../img/platao-b.jpg');
-    background-size: contain;
-    transition: .4s;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
 }
 
 footer
@@ -258,14 +378,16 @@ footer a
 {
     text-decoration: none;
     color: white;
+    transition: .9s;
 }
 
 footer a:hover
 {
     color: var(--cor1);
+    transition: .9s;
 }
 
-div#pae
+footer div#pae
 {
     display: flex;
     flex-direction: row;
